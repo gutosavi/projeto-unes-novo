@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UNES - Contato</title>
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+
+		}
+
+		body{
+			background-image: url(imagens/fundo2.png);
+
+		}
+
+		table{
+			border: 0;
+			width: 900px;
+			
+		}
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<td height="89"><img src="imagens/logo.png"></td>
+			<td align="right">
+				<a href="index.html">Home</a> | 
+				<a href="quemsomos.html">Quem somos</a> | 
+				<a href="">Contato</a>
+			</td>
+		</tr>
+	</table>
+
+	<form action="cadastro.php" method="POST" autocomplete="on">
+		<fieldset>
+			<legend>Dados Pessoais:</legend>
+			<p>
+				<label for="inome">Nome:</label>
+				<input type="text" name="nome" id="inome" required maxlength="30" autocomplete="name" placeholder="Digite seu nome">
+			</p>
+			<p>
+				<label for="imail">E-mail:</label>
+				<input type="email" name="email" id="imail" required placeholder="Digite seu e-mail">
+			</p>
+			<p>
+				<label for="itel">Telefone:</label>
+				<input type="tel" name="tel" id="itel" requided autocomplete="tel" pattern="^\(?\d{2}\)?\s?(9\d{4,5})-?\d{4}$" placeholder="(xx) xxxxx-xxxx">
+			</p>
+			<p>
+				<label for="ibox">Mensagem:</label><br>
+				<textarea name="Mensagem" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+				
+				
+			</p>
+			<p>
+				<input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

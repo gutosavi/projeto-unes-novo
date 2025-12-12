@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     i#burguer{
         display: none;
@@ -7,15 +7,17 @@
 
     div.imagem-capa{
         display: block;
-        width: 100vw;
+        width: 80vw;
         background-image: url(../imagens/capa.png);
         background-size: cover;
         background-position: center center;
         border-radius: 0;
+        transition: width .3s, heigth .3s;
+
     }
 
     section.corpo{
-        width: 60%;
+        min-width: 80vw;
     }
 
     nav#menu{
@@ -28,13 +30,15 @@
         flex-flow: row nowrap;
         justify-content: center;
         gap: 5px;
-            
+        
     }
 
-    ul.nav-links{
+    nav > ul > li > a {
+        width: 200px;
+        max-width: 90%;
         border-radius: 10px;
+    }
 
-   }
 
     
 }
