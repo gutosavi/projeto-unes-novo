@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+body{
+    width: 100vw;
+    background: url(../imagens/fundo.png);
+}
+
+header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+     
+
+}
+
+header img{
+    margin-top: 10px;
+    align-self: center;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+
+ul li{
+    display: none;
+    list-style: none;
+    
+}
+
+menu > ul > li > a{
+    width: 460px;
+    background-color: rgb(63, 63, 114);
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}     
+
+
+menu > ul > li > a:hover{
+    background-color: white;
+    color:rgb(63, 63, 114);
+    transition: 0.3s;
+
+}
+
+i#burguer{
+    font-size: 1.5em;
+    width: 460px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(63, 63, 114);
+    
+}
+
+i#burguer:hover{
+    background-color: white;
+    color:rgb(63, 63, 114);
+    transition: 0.3s;
+}
+
+
+
+.capa{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagem-capa img{
+    margin-top: 0px;
+    width: 460px;
+    height: 412px;
+}
+
+
+section h1{
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section p{
+    line-height: 1.5;
+    text-indent: 20px;
+    padding: 10px;
+}
+
+section.corpo{
+    background-color: rgb(223, 223, 223);
+    max-width: 460px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+    
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
