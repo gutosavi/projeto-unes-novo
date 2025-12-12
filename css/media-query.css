@@ -1,0 +1,40 @@
+
+@media screen and (min-width: 500px) {
+
+    i#burguer{
+        display: none;
+    }
+
+    div.imagem-capa{
+        display: block;
+        width: 100vw;
+        background-image: url(../imagens/capa.png);
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0;
+    }
+
+    section.corpo{
+        width: 60%;
+    }
+
+    nav#menu{
+        display: block;
+        
+    }
+
+    nav ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 5px;
+            
+    }
+
+    ul.nav-links{
+        border-radius: 10px;
+
+   }
+
+    
+}
